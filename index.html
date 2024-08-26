@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Select game mode -->
+  <div class="mode-select-box" id="modeSelectBox">
+    <header>TIC TAC TOE</header>
+    <div class="content">
+      <div class="title">CHOOSE GAME MODE</div>
+      <div class="options">
+        <button class="one-player">1 Player</button>
+        <button class="two-players">2 Players</button>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Select player symbol -->
+  <div class="select-box hide" id="selectBox">
+    <header>TIC TAC TOE</header>
+    <div class="content">
+      <div class="title">CHOOSE ONE</div>
+      <div class="options">
+        <button class="playerX">X</button>
+        <button class="playerO">O</button>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Playboard section -->
+  <div class="play-board hide" id="playBoard">
+    <div class="details">
+      <div class="players">
+        <span class="X">X</span>
+        <span class="O">O</span>
+        <div class="slider"></div>
+      </div>
+    </div>
+    <div class="play-area">
+      <section>
+        <span class="box1"></span>
+        <span class="box2"></span>
+        <span class="box3"></span>
+      </section>
+      <section>
+        <span class="box4"></span>
+        <span class="box5"></span>
+        <span class="box6"></span>
+      </section>
+      <section>
+        <span class="box7"></span>
+        <span class="box8"></span>
+        <span class="box9"></span>
+      </section>
+    </div>
+  </div>
+
+  <!-- Result box -->
+  <div class="result-box hide" id="resultBox">
+    <div class="won-text"></div>
+    <div class="btn"><button id="replayBtn">Replay</button></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
